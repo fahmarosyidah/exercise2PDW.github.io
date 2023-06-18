@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="form.css">
+    <title>Form</title>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <fieldset>
+                <legend>Formulir Reservasi</legend>
+                <label for="nama">Nama</label>
+                <input type="text" placeholder="Nama" id="nama"><br><br>
+                <label for="tamu">Jumlah Tamu</label>
+                <input type="text" placeholder="Jumlah Tamu" id="tamu"><br><br>
+                <label for="tanggal">Tanggal Reservasi</label>
+                <input type="date" id="tanggal"><br>
+                <p>Paket:</p>
+                <input type="radio" name="pesanan" id="paketA" value="paketA">
+                <label for="paketA">Paket A</label><br>
+                <input type="radio" name="pesanan" id="paketB" value="paketB">
+                <label for="paketB">Paket B</label><br>
+                <input type="radio" name="pesanan" id="paketS" value="paketS">
+                <label for="paketS">Paket Spesial</label><br><br>
+                <label for="ruangan">Pilih Ruangan</label><br>
+                <select id="ruangan">
+                    <option>Meeting Room</option>
+                    <option>Non Smoking Room</option>
+                    <option>Smoking Room</option>
+                </select><br><br>
+                <label for="pesan">Pesan</label><br>
+                <textarea rows="10" cols="60" placeholder="Beritahu kami jika Anda memiliki pesan khusus" id="pesan"></textarea><br><br>
+                <button type="submit" onclick="kirimData()">Kirim</button>
+            </fieldset>
+        </form>
+        <button class="back"><a href="index.html">Home</a></button>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
